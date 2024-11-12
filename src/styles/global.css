@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+    html {
+        @apply scroll-smooth;
+    }
+
+    body {
+        @apply bg-background text-onBase-background font-sans font-extralight tracking-wide selection:bg-primary-500 selection:text-white;
+    }
+
+    h1 {
+        @apply text-2xl font-serif;
+    }
+
+    h2 {
+        @apply text-2xl font-serif;
+    }
+
+    a {
+        @apply underline;
+        text-underline-offset: 3px;
+    }
+
+    hr {
+        @apply mt-10 mb-10 bg-border text-border border-border;
+    }
+}
+
+@layer components {
+
+    .btn {
+        @apply bg-primary-500 text-onBase-background font-normal no-underline px-5 py-2 rounded-full inline-block;
+    }
+
+    .bubble {
+        @apply flex flex-nowrap flex-col items-start;
+
+        >span {
+            @apply bg-secondary-500 text-onSecondary-500 font-sans font-extralight py-2 px-4 mb-2 rounded-bl-none rounded-tl-md rounded-tr-2xl rounded-br-2xl inline-block transition-all duration-200 border border-secondaryBackground;
+        }
+
+        &:hover {
+
+            >span {
+                @apply border-white/30;
+            }
+        }
+
+        &.--right {
+            @apply items-end;
+
+            >span {
+                @apply bg-primary-600 text-onPrimary-600 border-primary-600 rounded-bl-2xl rounded-tl-2xl rounded-tr-md rounded-br-none;
+            }
+
+            &:hover {
+
+                >span {
+                    @apply border-primary-500;
+                }
+            }
+        }
+    }
+
+    .avatar {
+        @apply flex justify-start mb-8;
+
+        &.--right {
+            @apply justify-end;
+        }
+    }
+
+    .flowdots {
+        margin: 0 auto;
+        display: flex;
+        height: 80px;
+        flex-wrap: wrap;
+        overflow: hidden;
+        -webkit-mask-image: linear-gradient(var(--mask-direction, to top), hsl(0 0% 0% / 0), hsl(0 0% 0% / 1) 20%, hsl(0 0% 0% / 1) 80%, hsl(0 0% 0% / 0));
+        mask-image: linear-gradient(var(--mask-direction, to top), hsl(0 0% 0% / 0), hsl(0 0% 0% / 1) 20%, hsl(0 0% 0% / 1) 80%, hsl(0 0% 0% / 0));
+    }
+
+    .flowdots__group {
+        width: 100%;
+        margin: 0 auto;
+        animation: scroll-y 1s linear infinite;
+    }
+
+    @keyframes scroll-x {
+        from {
+            transform: translateX(var(--scroll-start));
+        }
+
+        to {
+            transform: translateX(var(--scroll-end));
+        }
+    }
+
+    @keyframes scroll-y {
+        from {
+            transform: translateY(0);
+        }
+
+        to {
+            transform: translateY(16px);
+        }
+    }
+}

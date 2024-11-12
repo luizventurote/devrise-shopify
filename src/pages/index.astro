@@ -1,0 +1,171 @@
+---
+import "../styles/global.css";
+
+import Header from "../components/Header.astro";
+import Bubble from "../components/Bubble.astro";
+import Avatar from "../components/Avatar.astro";
+import CardDetails from "../components/CardDetails.astro";
+import ServicesDetails from "../components/ServicesDetails.astro";
+import Steps from "../components/Steps.astro";
+import CardCta from "../components/CardCta.astro";
+import Faq from "../components/Faq.astro";
+import Footer from "../components/Footer.astro";
+import Contact from "../components/Contact.astro";
+---
+
+<html>
+
+	<head>
+		<title>Shopify Bootcamp com Luiz Venturote</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@100;200;400;700&display=swap" rel="stylesheet"/>
+		<link rel="stylesheet" href="/dist/output.css" />
+
+		<!-- Facebook Meta Tags -->
+		<meta property="og:url" content="https://shopify.devrise.com.br/">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Shopify Bootcamp com Luiz Venturote - DevRise">
+		<meta property="og:description" content="">
+		<meta property="og:image" content="https://shopify.devrise.com.br/shopify-bootcamp.jpg">
+		<meta property="og:locale" content="pt_BR"/>
+	
+		<!-- Twitter Meta Tags -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta property="twitter:domain" content="shopify.devrise.com.br">
+		<meta property="twitter:url" content="https://shopify.devrise.com.br/">
+		<meta name="twitter:title" content="Shopify Bootcamp com Luiz Venturote - DevRise">
+		<meta name="twitter:description" content="">
+		<meta name="twitter:image" content="https://shopify.devrise.com.br/shopify-bootcamp.jpg">
+
+	</head>
+
+	<body class="bg-background text-primary font-sans font-extralight tracking-wide selection:bg-secondary/60 selection:text-white">
+
+		<div class="container px-5 pb-10">
+			
+			<Header />
+
+			<Bubble text="Olá, Luiz. Tudo bem?" guest />
+			<Bubble text="Eu vi que você vai iniciar o bootcamp de Shopify. Poderia falar mais sobre?" guest />
+			<Avatar time="32m atrás" guest />
+
+			<Bubble text="Opa, tudo certo! Com certeza!" />
+			<Bubble text="O bootcamp é 100% online e ao vivo, focado em te capacitar desde o básico até um nível avançado em Shopify, com foco no desenvolvimento de temas." />
+			<Bubble text="O objetivo é preparar profissionais para o mercado internacional de e-commerce!" />
+			<Avatar time="30m atrás" />
+
+			<Bubble text="E como funcionam as aulas?" guest />
+			<Avatar time="29m atrás" guest />
+
+			<Bubble text="Sim! As aulas serão ao vivo todos os sábados, das 9h às 11h." />
+			<Bubble text="Mas não se preocupe! Todas as aulas são gravadas, e você terá acesso às gravações por até um ano para rever sempre que precisar." />
+			<Avatar time="27m atrás" />
+
+			<Bubble text="Legal! E qual é a duração do curso?" guest />
+			<Avatar time="26m atrás" guest />
+
+			<Bubble text="O bootcamp tem duração de 6 meses, totalizando 50 horas de aulas práticas." />
+			<Bubble text="Iniciamos no dia 11 de Janeiro de 2025 🎉" />
+			<Bubble text="E vamos até 28 de Junho." />
+			<Avatar time="24m atrás" />
+
+			<hr />
+
+			<CardDetails />
+
+			<hr />
+
+			<Bubble text="Nossa! Os benefícios são incríveis!" guest />
+			<Bubble text="Mas quais conhecimentos técnicos eu preciso ter antes de começar?" guest />
+			<Avatar time="20m atrás" guest />
+
+			<Bubble text="É importante ter o conhecimento básico em HTML, CSS e JavaScript." />
+			<Avatar time="19m atrás" />
+
+			<Bubble text="Sério? Só isso mesmo?" guest />
+			<Bubble text="Que bom então 🙌" guest />
+			<Bubble text="Achei que precisa de mais kkk" guest />
+			<Avatar time="17m atrás" guest />
+
+			<Bubble text="Pode ficar tranquilo 😄" />
+			<Bubble text="Também vou te ensinar muito sobre desenvolvimento web durante o curso." />
+			<Avatar time="16m atrás" />
+
+			<Bubble text="Perfeito! E quem vai dar as aulas?" guest />
+			<Avatar time="15m atrás" guest />
+
+			<Bubble text="Eu mesmo!" />
+			<Bubble text="Tenho mais de 10 anos de experiência em desenvolvimento e-commerce."/>
+			<Bubble text="Trabalho com as principais plataformas do mercado, como Shopify, Magento, Nuvemshop, WooCommerce, etc."/>
+			<Bubble alt="Luiz Venturote" img="shopify-summit.jpg" />
+			<Avatar time="13m atrás" />
+
+			<Bubble text="Que ótimo, Luiz! E sobre os conteúdos..." guest />
+			<Bubble text="O que vou aprender exatamente?" guest />
+			<Avatar time="12m atrás" guest />
+
+			<Bubble text="Vamos começar com uma introdução ao Shopify, passando pelo desenvolvimento de temas profissionais, metodologias de criação de componentes e a instalação de aplicativos." />
+			<Bubble text="Além disso, teremos aulas extras!" />
+			<Avatar time="11m atrás" />
+
+			<hr />
+
+			<ServicesDetails />
+
+			<hr />
+
+			<Bubble text="E como funciona o pagamento?" guest />
+			<Avatar time="10m atrás" guest />
+
+			<Bubble text="Você pode pagar no PIX ou Cartão de Crédito, em até 10x sem juros."/>
+			<Bubble text="E se precisar cancelar durante o bootcamp, também oferecemos essa opção, sem compromisso."/>
+			<Avatar time="9m atrás" />
+
+			<Bubble text="Ok. E como faço para me inscrever?" guest />
+			<Avatar time="8m atrás" guest />
+
+			<Bubble text="É simples!" />
+			<Bubble text="Basta seguir as próximas intruções." />
+			<Avatar time="7m atrás" />
+
+			<hr />
+
+			<Steps />
+
+			<CardCta />
+
+			<hr />
+
+			<Bubble text="Luiz, e se eu tiver mais dúvidas?" guest />
+			<Avatar time="5m atrás" guest />
+
+			<Bubble text="É só me chamar! Entre em contato pelo WhatsApp. Será um prazer ajudar 😄"/>
+			<Avatar time="3m atrás" />
+
+			<Contact />
+
+			<hr />
+
+			<Faq />
+
+			<hr />
+
+			<Bubble text="Perfeito, Luiz!" guest/>
+			<Bubble text="Já quero garantir minha vaga 🎉" guest/>
+			<Avatar time="2m atrás" guest />
+
+			<Bubble text="Então, vamos lá!" />
+			<Bubble text="Faça a sua inscrição e vamos agendar uma conversa para eu analisar os seus objetivos e te falar um pouco mais sobre o Bootcamp." />
+			<Bubble text="Valeu 😄" />
+			<Avatar time="Visto agora" />
+
+			<hr>
+
+			<Footer />
+			  
+		</div>
+
+	</body>
+
+</html>

@@ -1,0 +1,12 @@
+---
+// Bubble.astro
+const { text, guest, img, alt } = Astro.props;
+const bubbleClass = guest ? 'bubble --right' : 'bubble';
+---
+
+<div class={bubbleClass}>
+    <span>
+        {img && <img src={img} alt={alt} />}
+        {text}
+    </span>
+</div>

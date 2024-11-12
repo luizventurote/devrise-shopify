@@ -1,0 +1,15 @@
+---
+// Bubble.astro
+const { time, guest } = Astro.props;
+import { Image } from 'astro:assets';
+import luizImage from '../assets/avatar-luiz.jpg';
+import guestImage from '../assets/avatar.jpg';
+const avatarImage = guest ? guestImage : luizImage; 
+const avatarClass = guest ? "avatar --right" : "avatar";
+---
+<div class={avatarClass}>
+    <div class="flex align-middle gap-2 items-center">
+        <Image src={avatarImage} alt="Luiz" class="rounded-full w-6" />
+        <div class="text-xs">{time}</div>
+    </div>
+</div>
